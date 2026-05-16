@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/projects";
+const BASE_URL = "https://portfolio-app-o8sw.onrender.com/api/projects";
 
 export const getProjects = async () => {
 
