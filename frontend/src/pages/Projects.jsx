@@ -97,7 +97,7 @@ function Projects() {
             <ProjectCard
               key={project.id}
               title={project.title}
-              dscription={project.description}
+              description={project.description}
               techStack={project.techStack}
               github={project.github}
               live={project.live}
