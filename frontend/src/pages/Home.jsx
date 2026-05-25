@@ -298,7 +298,7 @@ function Home() {
       value="200+"
       description="Problems solved across multiple topics"
       image="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
-      link="https://leetcode.com/u/ProPract"
+      link="https://leetcode.com/u/PK-22"
     />
 
     <StatCard
@@ -328,7 +328,7 @@ function Home() {
       value="101"
       description="Maximum  streak of 101 days"
       image="https://static.vecteezy.com/system/resources/previews/019/907/094/original/fire-graphic-clipart-design-free-png.png"
-      link="https://leetcode.com/u/ProPract"
+      link="https://leetcode.com/u/PK-22"
     />
 
     <StatCard
