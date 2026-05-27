@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import {getProjects} from "../api/projectApi";
 import ProjectCard from "../components/ProjectCard"
+import ProjectSkeleton from "../components/SkeletonLoader"
 import { motion } from "framer-motion"
 
 function Projects() {
 
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
 
@@ -14,8 +16,10 @@ function Projects() {
       try {
         const data = await getProjects();
         setProjects(data);
+        setLoading(false);
       } 
       catch (error) {
+        setLoading(false);
         console.log(error);
       }
   };
@@ -92,7 +96,8 @@ function Projects() {
       >
 
         {
-          projects.map((project) => (
+          loading ? [...Array(6)].map((_, index) =><ProjectSkeleton key={index}/>)
+         : projects.map((project) => (
 
             <ProjectCard
               key={project.id}
